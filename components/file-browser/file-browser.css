@@ -1,0 +1,23 @@
+.apply_upload {
+    padding: .5rem .4rem;
+}
+.apply_left {
+    /* min-width: 4rem; */
+    color: #666;
+    padding-top: .3rem;font-size:.75rem;
+}
+.apply_upload .apply_img,.apply_upload .apply_img_none {
+    width: 100%;
+    height: 2rem;
+    overflow: hidden;
+    background: #eafbff;
+    border: 1px solid #d8d8d8;
+    border-radius: .2rem;
+    /*color: #10a6d3;*/
+    padding: 0 .4rem;
+    margin: .4rem 0 .3rem 0;
+    font-size:.75rem;
+}
+
+.apply_upload .apply_img{height:auto;padding:.4rem .4rem;}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{headTitle}}</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">   
+  </head>
+  <body>
+    <div class="page-group">
+        <div class="page page-current">
+          <v-header :title="title1"  :left="left" ></v-header>
+          <v-nav :items="items"></v-nav>
+          <div class="content">
+            <v-input :width="'90%'" :height="'30px'" :textcolor="'#ff0000'" :visible="1"
+                     :readonly="1" :max="5" :min="2" :keyboard="0" :type="2"
+                     :legalmsg="'非法输入的自定义的某某'" :tcid="'name001'" :nonull="1"
+                     ref="'name001'" :value="'请输入内容'"></v-input>
+            <v-textarea :width="'40%'" :height="'58px'" :textcolor="'#ff0000'" :visible="1"
+                     :readonly="1" :max="30" :min="2"
+                     :legalmsg="'非法输入的自定义的某某'" :tcid="'name001'" :nonull="1"
+                     ref="'name001'" :value="'请输入内容'"></v-textarea>
+            <v-filebrowser
+                    :value="'文件名称'"
+                    :fileurl="json" :visible="1"
+                    :textcolor="'#10a6d3'" :width="'80%'" :height="'auto'"></v-filebrowser>
+            <v-treediagram :json="json2" :visible="1" :textcolor="'#666'"></v-treediagram>
+            <v-listview :json="json3" :visible="1" :height="'auto'" :width="'100%'"></v-listview>
+          </div>
+         </div>
+        </div>
+    </div>
+    <script type="text/javascript" src='../config.js' charset="utf-8"></script>
+    <script type="text/javascript" src='../js/lib/require/require.js' data-main='index.js' charset="utf-8"></script>
+  </body>
+</html>

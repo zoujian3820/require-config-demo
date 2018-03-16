@@ -1,0 +1,30 @@
+<div v-if="visible" :style="'width:'+width+';'+'height:'+height+';'+'color:'+textcolor+';overflow:hidden;'">
+    <div class="apply_upload" style="padding-top:.3rem;">
+        <div class="apply_left">正文</div>
+        <div id="getOAAttachPath" class="apply_img_wrap" v-if="Number(fileurl.docFile.code)">
+            <div v-for="ite in fileurl.docFile.docFile" class="apply_img"
+                 tid="1" :savepath="ite.path" @click="clickopen">{{ite.path.substr(ite.path.lastIndexOf('/')+1)}}</div>
+        </div>
+        <div class="apply_img_wrap" v-else>
+            <div class="apply_img_none ub ub-f1 ub-ac">无正文</div>
+        </div>
+    </div>
+
+    <div class="apply_upload" style="padding-top:0rem;">
+        <div class="apply_left" style="margin:0;padding:0;">附件</div>
+        <div id="getOAAttachPath2" class="apply_img_wrap" v-if="Number(fileurl.AttachList.code)">
+            <div v-for="item in fileurl.AttachList.AttachList" class="apply_img"
+                 tid="1" :savepath="item.ptah" @click="clickopen">{{item.ptah.substr(item.ptah.lastIndexOf('/')+1)}}</div>
+        </div>
+        <div class="apply_img_wrap" v-else>
+            <div class="apply_img_none ub ub-f1 ub-ac">无附件</div>
+        </div>
+    </div>
+
+    <!--<div class="apply_upload ub ub-f1 ub-ver"style="padding-top:0rem;">-->
+        <!--<div class="apply_left" style="margin:0;padding:0;">附件</div>-->
+        <!--<div id="getOAAttachPath2" class="ub ub-f1 ub-as ub-pc apply_img_wrap ub-ver">-->
+            <!--<div class="apply_img_none ub ub-f1 ub-ac">无附件</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>

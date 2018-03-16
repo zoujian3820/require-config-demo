@@ -1,0 +1,11 @@
+<header class="bar bar-nav">
+    <a class="pull-left" v-show="left.icon || left.text"  @click="onLeft" >
+        <i class="icon"  :class="[left.icon]" ></i>
+        <span v-if="left.text" class="icon">{{left.text}}</span>
+    </a>
+    <a class="pull-right" v-show="right.icon || right.text"  @click="onRight">
+        <i class="icon"   :class="[right.icon]" ></i>
+        <span v-if="right.text" class="icon">{{right.text}}</span>
+    </a>
+    <h1 class="title"  @click="onTitle">{{title}}</h1>
+</header>

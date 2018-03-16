@@ -1,0 +1,30 @@
+.sliderDelete .line1,.noSliderDelete .line1{
+    display:blcok;width:100%;color:#666;
+}
+.sliderDelete .icon-right,.noSliderDelete .icon-right{
+    color:#999;
+}
+.sliderDelete .email_Admin_list_bottom,.noSliderDelete .email_Admin_list_bottom{
+    padding-right:0;color:#666;font-size: .7rem;
+}
+.sliderDelete.ubb,.noSliderDelete.ubb{
+  border-bottom-color:#d8d8d8;
+}
+.sliderDelete.item-content a,.noSliderDelete.item-content a {
+    padding: .4rem 0 .4rem .3rem;}
+.sliderDelete.item-content,.noSliderDelete.item-content{
+    padding:0 .1rem;}
+.tit{
+    width:1rem;height:1rem;text-align:center;padding:0;margin:0;color:#0894ec;margin-left:.3rem;
+    border:1px solid #0894ec;border-radius:1rem;display:block;font-size:.6rem;
+}
+.f7{
+    font-size:.7rem;color:#999;
+}
+.f8{
+    font-size:.75rem;
+}
+.mar_l4{color:#999;margin-left:.4rem;}
+#wSlider{
+    overflow: hidden;
+}

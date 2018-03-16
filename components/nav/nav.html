@@ -1,0 +1,9 @@
+<nav class="bar bar-tab" v-if="items">
+  <a class="tab-item external " v-for="(val,index) in items"   :class="[{'active':(index == active)}]">
+    <span class="icon"  :class="[val.icon]"></span>
+    <span class="tab-label" v-text="val.title"></span>
+    <span class="badge" v-if="val.info" v-text="val.info"></span>
+  </a>  
+</nav>
+<!--:class="[{active:(index == active}]"-->
+                    

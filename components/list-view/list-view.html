@@ -1,0 +1,54 @@
+<div id="wSlider" v-if="visible" :style="'width:'+width+';height:'+height+';overflow:hidden;'">
+
+    <ul class="delete" v-for="item in json.list">
+
+        <li class="item-content ub ub-ac ubb sliderDelete"
+            v-for="int in item.frm_content"
+            v-if="Number(item.isdelete)!=0">
+            <span class="tit">{{int.state1}}</span>
+            <span class="tit">{{int.state2}}</span>
+            <a href="javascript:;" class="ub ub-f1 ub-ac ub-ps padd" >
+                <div class="ub ub-f1 ub-ver">
+
+                    <div class="ub ub-f1">
+                        <span class="ub ub ub-ac ub-ps f8">{{int.prefix}}</span>
+                        <div class="ub ub-f1 f8">{{int.value}}</div>
+                        <div class="ub ub-ac ub-pe f7">{{int.time}}</div>
+                    </div>
+
+                    <div class="ub ub-f1 ub-ac ub-ps email_Admin_list_bottom">
+                        <span style="padding-right:0;">{{int.other}}</span>
+                    </div>
+                </div>
+                <div class="icon icon-right mar_l4"></div>
+            </a>
+        </li>
+
+
+        <li class="item-content ub ub-ac ubb noSliderDelete"
+            v-for="int in item.frm_content"
+            v-if="Number(item.isdelete)==0">
+            <span class="tit">{{int.state1}}</span>
+            <span class="tit">{{int.state2}}</span>
+            <a href="javascript:;" class="ub ub-f1 ub-ac ub-ps padd" >
+                <div class="ub ub-f1 ub-ver">
+
+                    <div class="ub ub-f1">
+                        <span class="ub ub ub-ac ub-ps f8">{{int.prefix}}</span>
+                        <div class="ub ub-f1 f8">{{int.value}}</div>
+                        <div class="ub ub-ac ub-pe f7">{{int.time}}</div>
+                    </div>
+
+                    <div class="ub ub-f1 ub-ac ub-ps email_Admin_list_bottom">
+                        <span style="padding-right:0;">{{int.other}}</span>
+                    </div>
+                </div>
+                <div class="icon icon-right mar_l4"></div>
+            </a>
+        </li>
+
+    </ul>
+
+
+
+</div>

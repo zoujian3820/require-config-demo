@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>my-app</title>
+      <style>
+          .button{
+              width:100px;display: block;
+              height:30px;background: red;line-height: 30px;
+          }
+          .app{width: 300px;height: 40px;line-height: 40px;color:#000;}
+      </style>
+      <!--<script data-main="lib/main.js" src="lib/require.js"></script>-->
+      <script src="lib/require.js"></script>
+      <script src="lib/main.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="button">button</div>
+  </body>
+  <script>
+      require(['jquery','vue'],function($,Vue){
+          $('body').css('background','blue');
+          var add = {
+              template:"<div class='app'>这就是一个用例,请点击</div>"
+          }
+          new Vue({
+              el:'#app',
+              data:function(){
+                  return {
+                      seller:{
+                          type:Object
+                      }
+                  }
+              },
+              template:"<v-add></v-add>",
+              components:{
+                  'v-add': add
+              }
+          })
+      })
+      require(['header/header'],function(header){
+          header.data()
+          header.methods()
+      })
+      require(['not'],function(n){
+          n.a()
+          n.b()
+      })
+
+  </script>
+</html>

@@ -1,0 +1,8 @@
+<div class="textarea-wrap" v-if="visible_hidden">
+            <textarea :maxlength="max" :minlength="min" class="textarea"
+                   @blur="showToast(true,$event)" v-model="val"
+                   :class="cls" @keydown="showToast(false,$event)"
+                      @keyup="showToast(false,$event)" :readonly="read"
+                      :style="'resize:none;overflow:hidden;line-height:28px;width:'+width+';'+'height:'+height+';'+'color:'+textcolor+';'"
+                   :placeholder="value"></textarea>
+</div>

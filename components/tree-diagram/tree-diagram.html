@@ -1,0 +1,26 @@
+<div v-show="visible" v-if="Number(json.Code)">
+
+    <div class="ub ub-f1 ub-as apply_load_bottom" style="overflow-y: auto;/*margin-bottom: 3rem;*/">
+        <div class="apply_left2 ub ub-f1 ub-ver"><div id="xian" class="ub ub-f1 ub-ver"></div></div>
+        <div id="getOAOpinion" class="ub ub-f1 ub-as ub-ps ub-ver"style="padding-right:.4rem;margin-left:.3rem;">
+
+            <div v-for="item in json.Row" class="apply_content ub"
+                 style="position:relative;"
+                 @click.stop="penal_click(JSON.stringify(item.cccontent),$event)"
+                 :data="JSON.stringify(item.cccontent)">
+                <div class="ub ub-f1 ub-ver">
+                    <div class="apply_top" :style="'color:'+textcolor">{{item.content}}</div>
+                    <div class="apply_time" :style="'color:'+textcolor">{{item.username}}({{item.deptname}})</div>
+                    <div class="apply_time" :style="'color:'+textcolor">{{item.ctime}}</div>
+                </div>
+                <em class="ub ub-ac ub-pc icon"
+                    :class="item.cccontent.length>0?'icon-menu':''"
+                    style="color:#23ceac;font-size:1rem;"></em>
+                <i></i><span class="apply_guo"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

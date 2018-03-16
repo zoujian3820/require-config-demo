@@ -1,0 +1,85 @@
+/*侧滑CSS*/
+#panelPop .apply_content{background:#fff;padding:.3rem .3rem!important;
+    border-radius:.3rem;-webkit-border-radius:.3rem;margin-bottom:.4rem;}
+#panelPop .apply_content:last-child{margin-bottom:0;}
+#panelPop .apply_content .apply_top,#panelPop .apply_content .apply_time{
+    font-size:.7rem!important;color:#999;}
+.theme-dark .page, .theme-dark .login-screen-content, .page.theme-dark,
+.theme-dark .panel, .panel.theme-dark, .theme-dark .content{
+    background-color:#e7e7e7!important;width:15rem!important;
+}
+body.with-panel-right-reveal .panel-overlay {
+    margin-left: -15rem!important;
+}
+body.with-panel-right-reveal .page {
+    -webkit-transform: translate3d(-15rem, 0, 0)!important;
+    transform: translate3d(-15rem, 0, 0)!important;
+}
+.panel #panelPop.content-block{padding:0 .4rem!important;/*margin-top:2.2rem;*/}
+#panelPop .apply_content i {
+    width: 0em;
+    height: 0em;
+    display: block;
+    position: absolute;
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-rig: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid rgba(255, 255, 255, 1);
+    border-botttom: 10px solid rgba(0, 0, 0, 0);
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    left: -.21rem;
+    top: .7rem;
+    z-index: 2;
+}
+
+.apply_left2 div {
+    max-width: 1px;
+    background: #23ceac;
+    margin: 0 auto;
+}
+.apply_content .apply_guo {
+    font-size: 1rem;
+    left: -1.9rem;
+    top: .3rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1.2rem;
+    position: absolute;
+    z-index: 3;
+    background: #23ceac url(../tree-diagram/tongguo.png) no-repeat center center;
+    background-size: contain;
+}
+.apply_content i {
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 0px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid rgba(255, 255, 255, 1);
+    border-botttom: 10px solid rgba(0, 0, 0, 0);
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    left: -.21rem;
+    top: .7rem;
+    z-index: 2;
+}
+.apply_content {
+    border-radius: .15rem;
+    background-color: #fff;
+    padding: .4rem .4rem;
+    margin-top: .6rem;
+    width: 100%;
+}
+.apply_content .apply_time {
+    font-size: .7rem;
+    color: #999;
+}
+.apply_content .apply_top {
+    font-size: .8rem;
+}
+.apply_left2 {
+    max-width: 2rem;
+    min-width: 2rem;
+    height: 100%;
+}

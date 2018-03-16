@@ -1,0 +1,22 @@
+<div class="list-block">
+  <ul>
+  {{#items}}
+  <li>
+      <div class="item-content"> 
+        <div class="item-inner">
+          <div class="item-title label">{{title}}</div>
+          <div class="item-input"> 
+            <!-- text  email  password  date  checkbox  textarea--> 
+            <!-- noNull   是否为必填项，0：不需合法认证,1：非空    readOnly="true"-->
+            <!-- legalMsg 提示非法的信息内容，默认为“非法输入”-->
+            <!-- keyboard 软键盘设置，0:默认键盘，1：数字键盘，3：密码键盘；不填默认为0 -->
+            <!-- min      限制输入最少字符数，-1为不限制 -->
+            <!-- max      限制输入最大字符数，-1为不限制。不设置默认为1000 -->
+            <input type="{{setting.type == 0 ? 'text' : 'tel' }}" placeholder="{{placeholder}}" legalMsg="{{setting.legalMsg}}" value="{{value}}" noNull="{{setting.noNull}}"> 
+          </div>
+        </div>
+      </div>
+  </li> 
+  {{/items}}
+  </ul>
+</div> 
